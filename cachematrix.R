@@ -31,3 +31,11 @@ cacheSolve <- function(x, ...) {
     x$setinverse(i)
     i
 }
+
+
+## usage:
+## x <- matrix(rnorm(10000), c(100, 100))
+## xx <- makeCacheMatrix(x)
+## cacheSolve(xx)
+## # two times
+## cacheSolve(xx)
